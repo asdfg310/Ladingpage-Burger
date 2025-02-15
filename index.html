@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deli Burger Casera</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.png" alt="Deli Burger Casera">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content slide-in">
+            <h2>¡Las mejores hamburguesas caseras!</h2>
+            <p>Deliciosas, jugosas y con ingredientes frescos.</p>
+            <a href="#menu" class="btn pulse">Ver Menú</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="fade-in">Menú</h2>
+            <div class="menu-grid">
+                <div class="menu-item zoom-in">
+                    <img src="assets/images/burger1.jpg" alt="La Consentida">
+                    <h3>La Consentida</h3>
+                    <p>Hamburguesa de pierna de cerdo al barril, tocino, tomate, lechuga, cebolla caramelizada y queso.</p>
+                    <span class="price">$20.000</span>
+                </div>
+                <div class="menu-item zoom-in">
+                    <img src="assets/images/burger2.jpg" alt="La Consentida Doble">
+                    <h3>La Consentida Doble</h3>
+                    <p>300g de pierna de cerdo.</p>
+                    <span class="price">$26.000</span>
+                </div>
+                <div class="menu-item zoom-in">
+                    <img src="assets/images/burger3.jpg" alt="Bestial">
+                    <h3>Bestial</h3>
+                    <p>Hamburguesa de pierna de cerdo y chorizo al barril.</p>
+                    <span class="price">$25.000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto slide-in">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p><strong>Dirección:</strong> Carrera 8 #14-57 San Luis 2</p>
+            <p><strong>WhatsApp:</strong> <a href="tel:3122403846">3122403846</a></p>
+        </div>
+    </section>
+
+    <footer class="footer fade-in">
+        <p>&copy; 2025 Deli Burger Casera - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+</body>
+</html>
