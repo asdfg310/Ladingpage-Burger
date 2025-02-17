@@ -1,0 +1,52 @@
+/* Fondo del menú con imagen */
+.menu {
+    position: relative;
+    background: url('../assets/images/perros.jpg') no-repeat center center/cover;
+    padding: 80px 0;
+    color: rgb(2, 0, 0);
+}
+
+
+
+/* Contenedor principal */
+.menu .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos del título */
+.menu-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #ff0000;
+}
+
+/* Categorías del menú */
+.menu-category {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de cada ítem del menú */
+.menu-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+/* Precios en negrita */
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000;
+}

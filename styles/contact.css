@@ -1,0 +1,43 @@
+/* Sección de Contacto */
+.contacto {
+    background-color: #f8f9fa; /* Color claro */
+    padding: 60px 0;
+}
+
+.contacto h2 {
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Campos de entrada */
+.contacto .form-control {
+    border: 2px solid #d1d1d1;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Botón de envío */
+.contacto .btn-warning {
+    background-color: #ff0000;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contacto .btn-warning:hover {
+    background-color: #e60000;
+}

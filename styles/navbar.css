@@ -1,0 +1,129 @@
+/* ============================
+   📌 Navbar - Mejorado y Optimizado
+   ============================ */
+   .navbar {
+    background-color: #e6d00f !important; /* 🎨 Color fijo de la navbar */
+    padding: 20px 30px; /* 📏 Mayor espacio para un diseño más amplio */
+    height: 100px; /* 📏 Aumentar la altura de la barra de navegación */
+    position: fixed; /* 📌 Fijar la navbar en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* 🔄 Espaciado entre logo, menú y redes sociales */
+    align-items: center;
+    z-index: 1000; /* 📌 Asegurar que la navbar esté siempre por encima del contenido */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 🌟 Efecto cuando se hace scroll */
+.navbar.scrolled {
+    background: rgba(163, 67, 31, 0.9); /* 🎨 Cambia a un color más oscuro */
+    box-shadow: 0px 4px 10px rgba(163, 67, 31, 0.9); /* ✨ Sombra para mejorar el diseño */
+}
+
+/* ============================
+   📌 Logo - Ajustes de tamaño
+   ============================ */
+.navbar-brand img {
+    height: 90px; /* 📏 Aumentar tamaño del logo */
+    width: auto;  /* 🔄 Mantener proporciones */
+    transition: all 0.3s ease-in-out; /* 🎞️ Suavizar cambios */
+}
+
+/* ============================
+   📌 Menú de Navegación
+   ============================ */
+.navbar-nav {
+    display: flex;
+    gap: 25px; /* 📏 Mayor separación entre enlaces */
+}
+
+.navbar-nav .nav-item {
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    color: white; /* 🎨 Color del texto del menú */
+    font-size: 28px; /* 📏 Tamaño de la fuente */
+    font-weight: bold; /* 🔡 Negrita para resaltar */
+    text-decoration: none; /* ❌ Eliminar subrayado */
+    transition: color 0.3s ease-in-out; /* 🎞️ Suavizar efecto de cambio de color */
+}
+
+/* 🖱️ Cambio de color al pasar el mouse */
+.navbar-nav .nav-link:hover {
+    color: #040303;
+}
+
+/* ============================
+   📌 Botón hamburguesa en móvil
+   ============================ */
+.navbar-toggler {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* ============================
+   📌 Redes Sociales - Ajustes
+   ============================ */
+.social-icons {
+    display: flex;
+    gap: 20px; /* 📏 Espacio entre los iconos */
+}
+
+/* 🔗 Estilos para los íconos de redes sociales */
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white; /* 🎨 Fondo blanco */
+    border-radius: 50%; /* 🔵 Hacer los íconos redondos */
+    width: 50px; /* 📏 Aumentar tamaño */
+    height: 50px;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+/* 🎨 Efecto al pasar el mouse */
+.social-icons a:hover {
+    transform: scale(1.2); /* Aumenta el tamaño un 20% al pasar el mouse */
+    background: #ff1100; /* Cambio de color en hover */
+}
+
+/* 📷 Ajuste del tamaño de los iconos si son imágenes */
+.social-icons img {
+    width: 28px;
+    height: 28px;
+}
+
+/* ============================
+   📌 Ajuste Responsive - Pantallas Pequeñas
+   ============================ */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px;
+        height: auto;
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* 📱 Alinear el menú verticalmente */
+        text-align: center;
+        gap: 15px;
+    }
+
+    .social-icons {
+        justify-content: center; /* 📍 Centrar íconos en móviles */
+        margin-top: 10px;
+    }
+
+    /* 📐 Ajustar tamaño del logo en pantallas pequeñas */
+    .navbar-brand img {
+        height: 70px;
+    }
+}
