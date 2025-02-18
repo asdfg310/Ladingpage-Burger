@@ -1,52 +1,113 @@
-/* Fondo del menú con imagen */
+/* 📌 Fondo del menú con imagen */
 .menu {
     position: relative;
     background: url('../assets/images/perros.jpg') no-repeat center center/cover;
     padding: 80px 0;
-    color: rgb(2, 0, 0);
+    color: #000000; /* Se cambió a blanco para mayor contraste */
 }
 
+/* 🎭 Oscurecimiento para mejorar visibilidad del texto */
+.menu-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  /*  background: rgba(0, 0, 0, 0.5); /* Oscurecimiento sutil */
+    z-index: 1; /* Asegurar que sea menor al botón de WhatsApp */
+}
 
-
-/* Contenedor principal */
+/* 📌 Contenedor principal */
 .menu .container {
     position: relative;
     z-index: 2;
 }
 
-/* Estilos del título */
+/* 🎨 Estilos del título */
 .menu-title {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 40px;
+    color: #000000; /* Amarillo vibrante */
+}
+
+/* 🖱️ Cambio de color al pasar el mouse */
+.menu-title:hover {
     color: #ff0000;
 }
 
-/* Categorías del menú */
+/* 🏷 Categorías del menú */
 .menu-category {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.15);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
     margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo de cada ítem del menú */
+/* 🍔 Estilo de cada ítem del menú */
 .menu-item {
     background: rgba(255, 255, 255, 0.2);
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 15px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
 .menu-item:hover {
     transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
 }
 
-/* Precios en negrita */
+/* 💰 Precios en negrita y con fondo llamativo */
 .price {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    color: #ff0000;
+    color: #ffcc00;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1001; /* Asegurar que esté sobre todos los elementos */
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-float img {
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+
+/* 🔻 Responsividad */
+@media (max-width: 768px) {
+    .menu-category {
+        margin-bottom: 30px;
+    }
+
+    .menu-title {
+        font-size: 32px;
+    }
 }
